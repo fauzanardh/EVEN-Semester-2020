@@ -11,3 +11,14 @@ C = np.zeros((2, 3))
 D = np.ones((2, 3))
 # 2D diagonal numpy array
 E = np.diag([1, 2])
+
+# Generating numpy arrays
+F = np.arange(0, 6, 2)
+G = np.linspace(0, 1, 5)
+
+# Numpy functions
+arr = np.ones((2, 3))
+# Reshaping the array
+reshaped = arr.reshape((3, 2))
+# Flattening the array
+flatten = arr.flatten()

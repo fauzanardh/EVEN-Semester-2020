@@ -6,6 +6,7 @@ def concatenate():
     first = np.zeros((3, 1))
     second = np.ones((3, 1))
     concatenated = np.concatenate((first, second))
+    print(np.shape(concatenated))
     print(concatenated)
 
 
@@ -76,8 +77,30 @@ def check_infinity():
 # Assignment
 # Given two dimension arrays, extract unique rows from both arrays
 def unique():
-    array = np.array([1, 2, 3], [4, 5, 6])
-    array_2 = np.array([1, 2, 3], [6, 7, 8])
+    array = np.array([[1, 2, 3], [4, 5, 6]])
+    array_2 = np.array([[1, 2, 3], [6, 7, 8]])
     concat = np.concatenate((array, array_2))
-    _unique = np.unique(concat)
+    _unique = np.unique(concat, axis=0)
     print(_unique)
+
+
+print("concatenate")
+concatenate()
+print("first_column")
+first_column()
+print("transpose")
+transpose()
+print("reshape")
+reshape()
+print("_round")
+_round()
+print("do_something")
+do_something()
+print("multiply")
+multiply()
+print("multiply2")
+multiply2()
+print("check_infinity")
+check_infinity()
+print("unique")
+unique()
